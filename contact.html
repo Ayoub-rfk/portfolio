@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Ayoub RAFIK</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="./index.html" class="nav-logo">&lt;AR/&gt;</a>
+  <div class="nav-links">
+    <a href="./index.html"                data-i18n="nav.home">Accueil</a>
+    <a href="./a-propos.html"             data-i18n="nav.about">À propos</a>
+    <a href="./bts-sio.html"              data-i18n="nav.bts">BTS SIO</a>
+    <a href="./epreuve-e5.html"           data-i18n="nav.e5">Épreuve E5</a>
+    <a href="./epreuve-e6.html"           data-i18n="nav.e6">Épreuve E6</a>
+    <a href="./veille-technologique.html" data-i18n="nav.veille">Veille</a>
+    <a href="./competences.html"          data-i18n="nav.skills">Compétences</a>
+    <a href="./contact.html"              data-i18n="nav.contact">Contact</a>
+  </div>
+  <div class="nav-controls">
+    <button class="btn-icon js-lang-btn"  onclick="toggleLang()">EN</button>
+    <button class="btn-icon js-theme-btn" onclick="toggleTheme()">☀️ Light</button>
+  </div>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div id="navDrawer" class="nav-drawer">
+  <a href="./index.html"                data-i18n="nav.home">Accueil</a>
+  <a href="./a-propos.html"             data-i18n="nav.about">À propos</a>
+  <a href="./bts-sio.html"              data-i18n="nav.bts">BTS SIO</a>
+  <a href="./epreuve-e5.html"           data-i18n="nav.e5">Épreuve E5</a>
+  <a href="./epreuve-e6.html"           data-i18n="nav.e6">Épreuve E6</a>
+  <a href="./veille-technologique.html" data-i18n="nav.veille">Veille technologique</a>
+  <a href="./competences.html"          data-i18n="nav.skills">Compétences</a>
+  <a href="./contact.html"              data-i18n="nav.contact">Contact</a>
+  <div class="drawer-controls">
+    <button class="btn-icon js-lang-btn"  onclick="toggleLang()">EN</button>
+    <button class="btn-icon js-theme-btn" onclick="toggleTheme()">☀️ Light</button>
+  </div>
+</div>
+
+<div class="page">
+
+  <header class="page-header">
+    <span class="page-header-label">// contact.me</span>
+    <h1 class="page-header-title"
+        data-fr="Me contacter"
+        data-en="Get in touch">Me contacter</h1>
+    <p class="page-header-sub"
+       data-fr="Une question, une opportunité d'alternance ou juste envie d'échanger — écrivez-moi."
+       data-en="A question, a work-study opportunity, or just want to chat — drop me a message.">
+      Une question, une opportunité d'alternance ou juste envie d'échanger — écrivez-moi.
+    </p>
+  </header>
+
+  <div class="section">
+    <div class="contact-grid fade-up">
+
+      <!-- Left: contact info -->
+      <div>
+        <div class="contact-info-list">
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📞</div>
+            <div>
+              <div class="contact-info-label"
+                   data-fr="Téléphone" data-en="Phone">Téléphone</div>
+              <div class="contact-info-value">
+                <a href="tel:+33672118317">06 72 11 83 17</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">✉️</div>
+            <div>
+              <div class="contact-info-label">Email</div>
+              <div class="contact-info-value">
+                <a href="mailto:rafikayoub453@gmail.com">rafikayoub453@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📍</div>
+            <div>
+              <div class="contact-info-label"
+                   data-fr="Localisation" data-en="Location">Localisation</div>
+              <div class="contact-info-value">Sartrouville, Île-de-France</div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">💼</div>
+            <div>
+              <div class="contact-info-label">LinkedIn</div>
+              <div class="contact-info-value">
+                <a href="https://fr.linkedin.com/in/ayoub-rafik-22186b313" target="_blank" rel="noopener">
+                  ayoub-rafik-22186b313
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">🎯</div>
+            <div>
+              <div class="contact-info-label"
+                   data-fr="Recherche" data-en="Seeking">Recherche</div>
+              <div class="contact-info-value"
+                   data-fr="Alternance SISR — à partir de sept. 2025"
+                   data-en="Work-study SISR — from Sept. 2025">
+                Alternance SISR — à partir de sept. 2025
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CV download -->
+        <a href="./assets/docs/CV_RAFIK_Ayoub.pdf" class="btn-primary" download
+           data-fr="⬇ Télécharger mon CV" data-en="⬇ Download my CV">
+          ⬇ Télécharger mon CV
+        </a>
+
+        <!-- Availability notice -->
+        <div style="margin-top:1.5rem; padding:1rem 1.25rem; background:var(--bg2); border:1px solid var(--border); border-radius:var(--r); font-size:0.875rem; color:var(--text2);">
+          <span style="color:var(--green);">●</span>&nbsp;
+          <span data-fr="Disponible en alternance à partir de septembre 2025 — rythme 2j école / 3j entreprise."
+                data-en="Available for work-study from September 2025 — 2 days school / 3 days on-site.">
+            Disponible en alternance à partir de septembre 2025 — rythme 2j école / 3j entreprise.
+          </span>
+        </div>
+      </div>
+
+      <!-- Right: contact form -->
+      <form class="contact-form" id="contactForm">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstname"
+                   data-fr="Prénom" data-en="First name">Prénom</label>
+            <input type="text" id="firstname" name="firstname"
+                   data-fr-placeholder="Votre prénom"
+                   data-en-placeholder="Your first name"
+                   placeholder="Votre prénom" required>
+          </div>
+          <div class="form-group">
+            <label for="lastname"
+                   data-fr="Nom" data-en="Last name">Nom</label>
+            <input type="text" id="lastname" name="lastname"
+                   data-fr-placeholder="Votre nom"
+                   data-en-placeholder="Your last name"
+                   placeholder="Votre nom" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email"
+                 data-fr-placeholder="votre@email.com"
+                 data-en-placeholder="your@email.com"
+                 placeholder="votre@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="subject"
+                 data-fr="Sujet" data-en="Subject">Sujet</label>
+          <input type="text" id="subject" name="subject"
+                 data-fr-placeholder="Ex: Proposition d'alternance"
+                 data-en-placeholder="Ex: Work-study proposal"
+                 placeholder="Ex: Proposition d'alternance">
+        </div>
+
+        <div class="form-group">
+          <label for="message"
+                 data-fr="Message" data-en="Message">Message</label>
+          <textarea id="message" name="message"
+                    data-fr-placeholder="Votre message..."
+                    data-en-placeholder="Your message..."
+                    placeholder="Votre message..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary"
+                data-fr="✉ Envoyer le message"
+                data-en="✉ Send message">
+          ✉ Envoyer le message
+        </button>
+
+        <p style="font-size:0.75rem; color:var(--text2); text-align:center;"
+           data-fr="Le formulaire ouvrira votre client de messagerie."
+           data-en="The form will open your email client.">
+          Le formulaire ouvrira votre client de messagerie.
+        </p>
+
+      </form>
+
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <span data-i18n="footer.copy">Fait avec ❤️ par Ayoub RAFIK</span>
+  <span class="mono">//</span>
+  <a href="https://pages.github.com" target="_blank" data-i18n="footer.host">Hébergé sur GitHub Pages</a>
+</footer>
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>

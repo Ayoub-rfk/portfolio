@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Épreuve E6 | Ayoub RAFIK</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="./index.html" class="nav-logo">&lt;AR/&gt;</a>
+  <div class="nav-links">
+    <a href="./index.html"                data-i18n="nav.home">Accueil</a>
+    <a href="./a-propos.html"             data-i18n="nav.about">À propos</a>
+    <a href="./bts-sio.html"              data-i18n="nav.bts">BTS SIO</a>
+    <a href="./epreuve-e5.html"           data-i18n="nav.e5">Épreuve E5</a>
+    <a href="./epreuve-e6.html"           data-i18n="nav.e6">Épreuve E6</a>
+    <a href="./veille-technologique.html" data-i18n="nav.veille">Veille</a>
+    <a href="./competences.html"          data-i18n="nav.skills">Compétences</a>
+    <a href="./contact.html"              data-i18n="nav.contact">Contact</a>
+  </div>
+  <div class="nav-controls">
+    <button class="btn-icon js-lang-btn"  onclick="toggleLang()">EN</button>
+    <button class="btn-icon js-theme-btn" onclick="toggleTheme()">☀️ Light</button>
+  </div>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div id="navDrawer" class="nav-drawer">
+  <a href="./index.html"                data-i18n="nav.home">Accueil</a>
+  <a href="./a-propos.html"             data-i18n="nav.about">À propos</a>
+  <a href="./bts-sio.html"              data-i18n="nav.bts">BTS SIO</a>
+  <a href="./epreuve-e5.html"           data-i18n="nav.e5">Épreuve E5</a>
+  <a href="./epreuve-e6.html"           data-i18n="nav.e6">Épreuve E6</a>
+  <a href="./veille-technologique.html" data-i18n="nav.veille">Veille technologique</a>
+  <a href="./competences.html"          data-i18n="nav.skills">Compétences</a>
+  <a href="./contact.html"              data-i18n="nav.contact">Contact</a>
+  <div class="drawer-controls">
+    <button class="btn-icon js-lang-btn"  onclick="toggleLang()">EN</button>
+    <button class="btn-icon js-theme-btn" onclick="toggleTheme()">☀️ Light</button>
+  </div>
+</div>
+
+<div class="page">
+
+  <header class="page-header">
+    <span class="page-header-label">// epreuve.E6</span>
+    <h1 class="page-header-title"
+        data-fr="Épreuve E6 — Cybersécurité & Administration avancée"
+        data-en="E6 Exam — Cybersecurity & Advanced Administration">Épreuve E6 — Cybersécurité & Administration avancée</h1>
+    <p class="page-header-sub"
+       data-fr="Projets axés sur la sécurisation des infrastructures, le déploiement de services et l'analyse réseau."
+       data-en="Projects focused on infrastructure hardening, service deployment and network analysis.">
+      Projets axés sur la sécurisation des infrastructures, le déploiement de services et l'analyse réseau.
+    </p>
+  </header>
+
+  <div class="section">
+
+    <div class="bts-intro fade-up"
+         data-fr="L'<strong>épreuve E6</strong> (Parcours de professionnalisation) évalue les compétences acquises lors des périodes en entreprise et les projets de cybersécurité. Pour l'option SISR, elle couvre la sécurisation des infrastructures, la gestion des incidents et les bonnes pratiques de sécurité informatique."
+         data-en="The <strong>E6 exam</strong> (Professional development path) assesses skills acquired during work placements and cybersecurity projects. For the SISR track, it covers infrastructure hardening, incident management and IT security best practices.">
+      L'<strong>épreuve E6</strong> (Parcours de professionnalisation) évalue les compétences acquises lors des périodes en entreprise et les projets de cybersécurité. Pour l'option SISR, elle couvre la sécurisation des infrastructures, la gestion des incidents et les bonnes pratiques de sécurité informatique.
+    </div>
+
+    <div class="section-header fade-up">
+      <span class="section-label">// security.projects</span>
+      <h2 class="section-title"
+          data-fr="Projets <span>Sécurité & Déploiement</span>"
+          data-en="<span>Security & Deployment</span> Projects">Projets <span>Sécurité & Déploiement</span></h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="projects-grid stagger fade-up">
+
+      <div class="project-card">
+        <div class="project-icon">🌍</div>
+        <div class="project-title"
+             data-fr="Déploiement Serveur Web Apache sur Debian"
+             data-en="Apache Web Server Deployment on Debian">Déploiement Serveur Web Apache sur Debian</div>
+        <div class="project-desc"
+             data-fr="Installation d'une stack LAMP complète sur Debian : Apache, MySQL, PHP. Configuration du pare-feu UFW, exposition du service via NAT, sécurisation des accès et configuration des hôtes virtuels."
+             data-en="Installation of a full LAMP stack on Debian: Apache, MySQL, PHP. UFW firewall configuration, service exposure via NAT, access hardening and virtual host configuration.">
+          Installation d'une stack LAMP complète sur Debian : Apache, MySQL, PHP. Configuration du pare-feu UFW, exposition du service via NAT, sécurisation des accès et configuration des hôtes virtuels.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">Apache</span>
+          <span class="project-tag">LAMP</span>
+          <span class="project-tag">UFW Firewall</span>
+          <span class="project-tag">NAT</span>
+          <span class="project-tag">Debian</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🔍</div>
+        <div class="project-title"
+             data-fr="Simulation d'Incidents Réseau"
+             data-en="Network Incident Simulation">Simulation d'Incidents Réseau</div>
+        <div class="project-desc"
+             data-fr="Scénarios de pannes simulées : défaillance DNS, perte de bail DHCP, perte de connectivité réseau. Analyse des causes avec les outils de diagnostic (ipconfig, netstat, tracert, Wireshark). Rédaction de rapports d'incidents."
+             data-en="Simulated failure scenarios: DNS failure, lost DHCP lease, network connectivity loss. Root cause analysis with diagnostic tools (ipconfig, netstat, tracert, Wireshark). Incident report writing.">
+          Scénarios de pannes simulées : défaillance DNS, perte de bail DHCP, perte de connectivité réseau. Analyse des causes avec les outils de diagnostic (ipconfig, netstat, tracert, Wireshark). Rédaction de rapports d'incidents.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">Wireshark</span>
+          <span class="project-tag">DNS / DHCP</span>
+          <span class="project-tag">Traceroute</span>
+          <span class="project-tag">Netstat</span>
+          <span class="project-tag" data-fr="Rapport d'incident" data-en="Incident report">Rapport d'incident</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🔒</div>
+        <div class="project-title"
+             data-fr="Sécurisation d'un Réseau Cisco (Port-Security)"
+             data-en="Cisco Network Hardening (Port-Security)">Sécurisation d'un Réseau Cisco (Port-Security)</div>
+        <div class="project-desc"
+             data-fr="Configuration de la sécurité des ports sur des commutateurs Cisco IOS : limitation du nombre d'adresses MAC, détection d'intrusions, modes de violation (protect, restrict, shutdown). Tests de résistance aux attaques de type MAC flooding."
+             data-en="Port security configuration on Cisco IOS switches: MAC address count limiting, intrusion detection, violation modes (protect, restrict, shutdown). Resistance testing against MAC flooding attacks.">
+          Configuration de la sécurité des ports sur des commutateurs Cisco IOS : limitation du nombre d'adresses MAC, détection d'intrusions, modes de violation (protect, restrict, shutdown). Tests de résistance aux attaques de type MAC flooding.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">Cisco IOS</span>
+          <span class="project-tag">Port-Security</span>
+          <span class="project-tag">MAC Filtering</span>
+          <span class="project-tag">Packet Tracer</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">📊</div>
+        <div class="project-title"
+             data-fr="Supervision avec Nagios & Zabbix"
+             data-en="Monitoring with Nagios & Zabbix">Supervision avec Nagios & Zabbix</div>
+        <div class="project-desc"
+             data-fr="Configuration de checks de supervision sur des serveurs Linux et Windows avec Nagios. Mise en place d'alertes sur des seuils (CPU, mémoire, disque). Découverte des fonctionnalités de Zabbix pour la supervision réseau."
+             data-en="Configuration of monitoring checks on Linux and Windows servers with Nagios. Setting up threshold alerts (CPU, memory, disk). Discovery of Zabbix features for network monitoring.">
+          Configuration de checks de supervision sur des serveurs Linux et Windows avec Nagios. Mise en place d'alertes sur des seuils (CPU, mémoire, disque). Découverte des fonctionnalités de Zabbix pour la supervision réseau.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">Nagios</span>
+          <span class="project-tag">Zabbix</span>
+          <span class="project-tag">SNMP</span>
+          <span class="project-tag">Linux</span>
+          <span class="project-tag">Windows Server</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">📡</div>
+        <div class="project-title"
+             data-fr="Analyse de Trames avec Wireshark"
+             data-en="Frame Analysis with Wireshark">Analyse de Trames avec Wireshark</div>
+        <div class="project-desc"
+             data-fr="Capture et analyse de trames réseau en environnement contrôlé : filtrage de flux HTTP, DNS, ARP, identification d'anomalies, reconstitution de sessions TCP et analyse des handshakes."
+             data-en="Network frame capture and analysis in a controlled environment: HTTP, DNS, ARP traffic filtering, anomaly identification, TCP session reconstruction and handshake analysis.">
+          Capture et analyse de trames réseau en environnement contrôlé : filtrage de flux HTTP, DNS, ARP, identification d'anomalies, reconstitution de sessions TCP et analyse des handshakes.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">Wireshark</span>
+          <span class="project-tag">TCP/IP</span>
+          <span class="project-tag">HTTP / DNS / ARP</span>
+          <span class="project-tag">Nmap</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🗄️</div>
+        <div class="project-title"
+             data-fr="Active Directory & Stratégies GPO"
+             data-en="Active Directory & GPO Policies">Active Directory & Stratégies GPO</div>
+        <div class="project-desc"
+             data-fr="Configuration d'un domaine Active Directory sous Windows Server 2022 : création d'utilisateurs, d'unités organisationnelles (OU), application de stratégies de groupe (GPO) pour uniformiser les postes de travail."
+             data-en="Active Directory domain configuration under Windows Server 2022: user creation, organizational units (OU), Group Policy Objects (GPO) deployment to standardize workstations.">
+          Configuration d'un domaine Active Directory sous Windows Server 2022 : création d'utilisateurs, d'unités organisationnelles (OU), application de stratégies de groupe (GPO) pour uniformiser les postes de travail.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">Active Directory</span>
+          <span class="project-tag">GPO</span>
+          <span class="project-tag">Windows Server 2022</span>
+          <span class="project-tag">DNS / DHCP</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Certifications -->
+    <div class="section-header fade-up" style="margin-top:3rem">
+      <span class="section-label">// certifications</span>
+      <h2 class="section-title"
+          data-fr="<span>Certifications</span> en cours"
+          data-en="Ongoing <span>Certifications</span>"><span>Certifications</span> en cours</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="certs-grid stagger fade-up">
+      <div class="cert-card">
+        <div class="cert-icon">🏅</div>
+        <div>
+          <div class="cert-name">CCNA 200-301</div>
+          <div class="cert-status"
+               data-fr="En préparation — Cisco NetAcad"
+               data-en="In progress — Cisco NetAcad">En préparation — Cisco NetAcad</div>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🐧</div>
+        <div>
+          <div class="cert-name">Linux Essentials — LPI</div>
+          <div class="cert-status"
+               data-fr="Préparation autodidacte — Linux Academy"
+               data-en="Self-study — Linux Academy">Préparation autodidacte — Linux Academy</div>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🇬🇧</div>
+        <div>
+          <div class="cert-name">TOEIC Listening & Reading</div>
+          <div class="cert-status done">850 / 990</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <span data-i18n="footer.copy">Fait avec ❤️ par Ayoub RAFIK</span>
+  <span class="mono">//</span>
+  <a href="https://pages.github.com" target="_blank" data-i18n="footer.host">Hébergé sur GitHub Pages</a>
+</footer>
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>

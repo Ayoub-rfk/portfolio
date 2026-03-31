@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Épreuve E5 | Ayoub RAFIK</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="./index.html" class="nav-logo">&lt;AR/&gt;</a>
+  <div class="nav-links">
+    <a href="./index.html"                data-i18n="nav.home">Accueil</a>
+    <a href="./a-propos.html"             data-i18n="nav.about">À propos</a>
+    <a href="./bts-sio.html"              data-i18n="nav.bts">BTS SIO</a>
+    <a href="./epreuve-e5.html"           data-i18n="nav.e5">Épreuve E5</a>
+    <a href="./epreuve-e6.html"           data-i18n="nav.e6">Épreuve E6</a>
+    <a href="./veille-technologique.html" data-i18n="nav.veille">Veille</a>
+    <a href="./competences.html"          data-i18n="nav.skills">Compétences</a>
+    <a href="./contact.html"              data-i18n="nav.contact">Contact</a>
+  </div>
+  <div class="nav-controls">
+    <button class="btn-icon js-lang-btn"  onclick="toggleLang()">EN</button>
+    <button class="btn-icon js-theme-btn" onclick="toggleTheme()">☀️ Light</button>
+  </div>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div id="navDrawer" class="nav-drawer">
+  <a href="./index.html"                data-i18n="nav.home">Accueil</a>
+  <a href="./a-propos.html"             data-i18n="nav.about">À propos</a>
+  <a href="./bts-sio.html"              data-i18n="nav.bts">BTS SIO</a>
+  <a href="./epreuve-e5.html"           data-i18n="nav.e5">Épreuve E5</a>
+  <a href="./epreuve-e6.html"           data-i18n="nav.e6">Épreuve E6</a>
+  <a href="./veille-technologique.html" data-i18n="nav.veille">Veille technologique</a>
+  <a href="./competences.html"          data-i18n="nav.skills">Compétences</a>
+  <a href="./contact.html"              data-i18n="nav.contact">Contact</a>
+  <div class="drawer-controls">
+    <button class="btn-icon js-lang-btn"  onclick="toggleLang()">EN</button>
+    <button class="btn-icon js-theme-btn" onclick="toggleTheme()">☀️ Light</button>
+  </div>
+</div>
+
+<div class="page">
+
+  <header class="page-header">
+    <span class="page-header-label">// epreuve.E5</span>
+    <h1 class="page-header-title"
+        data-fr="Épreuve E5 — Situations Professionnelles"
+        data-en="E5 Exam — Professional Situations">Épreuve E5 — Situations Professionnelles</h1>
+    <p class="page-header-sub"
+       data-fr="Projets d'infrastructure, de virtualisation et d'administration réseau réalisés en formation et en autonomie."
+       data-en="Infrastructure, virtualization and network administration projects completed during training and independently.">
+      Projets d'infrastructure, de virtualisation et d'administration réseau réalisés en formation et en autonomie.
+    </p>
+  </header>
+
+  <div class="section">
+
+    <div class="bts-intro fade-up"
+         data-fr="L'<strong>épreuve E5</strong> (Support et mise à disposition de services informatiques) évalue la capacité du candidat à réaliser des situations professionnelles dans le domaine des réseaux et systèmes. Elle repose sur un dossier de situations professionnelles et une présentation orale devant jury."
+         data-en="The <strong>E5 exam</strong> (Support and deployment of IT services) assesses the candidate's ability to carry out professional situations in the field of networks and systems. It is based on a portfolio of professional situations and an oral presentation before a jury.">
+      L'<strong>épreuve E5</strong> (Support et mise à disposition de services informatiques) évalue la capacité du candidat à réaliser des situations professionnelles dans le domaine des réseaux et systèmes. Elle repose sur un dossier de situations professionnelles et une présentation orale devant jury.
+    </div>
+
+    <div class="section-header fade-up">
+      <span class="section-label">// projects</span>
+      <h2 class="section-title"
+          data-fr="Projets <span>réalisés</span>"
+          data-en="Completed <span>Projects</span>">Projets <span>réalisés</span></h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="projects-grid stagger fade-up">
+
+      <div class="project-card">
+        <div class="project-icon">🖥️</div>
+        <div class="project-title"
+             data-fr="Déploiement VMware ESXi + Monitoring"
+             data-en="VMware ESXi Deployment + Monitoring">Déploiement VMware ESXi + Monitoring</div>
+        <div class="project-desc"
+             data-fr="Installation de VMware ESXi 6.7 sur baremetal, déploiement de Windows Server 2019 avec Active Directory et DHCP, puis mise en place d'une supervision Nagios pour les clients Windows."
+             data-en="Installation of VMware ESXi 6.7 on bare metal, deployment of Windows Server 2019 with Active Directory and DHCP, then implementation of Nagios monitoring for Windows clients.">
+          Installation de VMware ESXi 6.7 sur baremetal, déploiement de Windows Server 2019 avec Active Directory et DHCP, puis mise en place d'une supervision Nagios pour les clients Windows.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">VMware ESXi 6.7</span>
+          <span class="project-tag">Windows Server 2019</span>
+          <span class="project-tag">Active Directory</span>
+          <span class="project-tag">DHCP</span>
+          <span class="project-tag">Nagios</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">☁️</div>
+        <div class="project-title"
+             data-fr="Administration OpenStack Multi-Node"
+             data-en="Multi-Node OpenStack Administration">Administration OpenStack Multi-Node</div>
+        <div class="project-desc"
+             data-fr="Installation manuelle d'un environnement OpenStack en configuration multi-nœuds. Administration des réseaux clients avec Neutron, configuration de VXLAN et OpenvSwitch pour l'isolation des tenants."
+             data-en="Manual installation of a multi-node OpenStack environment. Administration of client networks with Neutron, configuration of VXLAN and OpenvSwitch for tenant isolation.">
+          Installation manuelle d'un environnement OpenStack en configuration multi-nœuds. Administration des réseaux clients avec Neutron, configuration de VXLAN et OpenvSwitch pour l'isolation des tenants.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">OpenStack Newton</span>
+          <span class="project-tag">Neutron</span>
+          <span class="project-tag">OpenvSwitch</span>
+          <span class="project-tag">VXLAN</span>
+          <span class="project-tag">Linux Bridge</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">⚡</div>
+        <div class="project-title"
+             data-fr="Migration à chaud KVM (Live Migration)"
+             data-en="KVM Live Migration">Migration à chaud KVM (Live Migration)</div>
+        <div class="project-desc"
+             data-fr="Réalisation d'une migration à chaud de machines virtuelles sous QEMU-KVM avec stockage partagé NAS via NFS. Utilisation de libvirt et virt-manager pour l'orchestration."
+             data-en="Live migration of virtual machines under QEMU-KVM with shared NAS storage via NFS. Use of libvirt and virt-manager for orchestration.">
+          Réalisation d'une migration à chaud de machines virtuelles sous QEMU-KVM avec stockage partagé NAS via NFS. Utilisation de libvirt et virt-manager pour l'orchestration.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">KVM / QEMU</span>
+          <span class="project-tag">libvirt</span>
+          <span class="project-tag">virt-manager</span>
+          <span class="project-tag">NFS / NAS</span>
+          <span class="project-tag">Ubuntu 16.04</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🌐</div>
+        <div class="project-title"
+             data-fr="Application Web Multi-Tiers"
+             data-en="Multi-Tier Web Application">Application Web Multi-Tiers</div>
+        <div class="project-desc"
+             data-fr="Développement d'une application web de suivi de consommation d'énergie. Architecture multi-tiers avec un front-end HTML/CSS, un back-end PHP et une base de données MySQL."
+             data-en="Development of an energy consumption tracking web application. Multi-tier architecture with HTML/CSS front-end, PHP back-end, and MySQL database.">
+          Développement d'une application web de suivi de consommation d'énergie. Architecture multi-tiers avec un front-end HTML/CSS, un back-end PHP et une base de données MySQL.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">HTML / CSS</span>
+          <span class="project-tag">PHP</span>
+          <span class="project-tag">MySQL</span>
+          <span class="project-tag" data-fr="Architecture MVC" data-en="MVC Architecture">Architecture MVC</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🔧</div>
+        <div class="project-title"
+             data-fr="Administration VMware vCenter"
+             data-en="VMware vCenter Administration">Administration VMware vCenter</div>
+        <div class="project-desc"
+             data-fr="Configuration avancée de VMware : vMotion, migration P2V, Distributed Resource Scheduling (DRS), High Availability (HA) et Fault Tolerance (FT). Stockage iSCSI SAN partagé avec Openfiler."
+             data-en="Advanced VMware configuration: vMotion, P2V migration, Distributed Resource Scheduling (DRS), High Availability (HA) and Fault Tolerance (FT). Shared iSCSI SAN storage with Openfiler.">
+          Configuration avancée de VMware : vMotion, migration P2V, Distributed Resource Scheduling (DRS), High Availability (HA) et Fault Tolerance (FT). Stockage iSCSI SAN partagé avec Openfiler.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">vCenter 6.7</span>
+          <span class="project-tag">vMotion</span>
+          <span class="project-tag">DRS / HA / FT</span>
+          <span class="project-tag">iSCSI SAN</span>
+          <span class="project-tag">Openfiler</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🔗</div>
+        <div class="project-title"
+             data-fr="LAN Entreprise Simulé sous GNS3"
+             data-en="Simulated Enterprise LAN under GNS3">LAN Entreprise Simulé sous GNS3</div>
+        <div class="project-desc"
+             data-fr="Conception et déploiement d'un réseau LAN d'entreprise sous GNS3 : 3 VLANs, routage dynamique OSPF, sécurisation des ports de commutateurs, test de redondance avec Spanning Tree Protocol (STP)."
+             data-en="Design and deployment of an enterprise LAN under GNS3: 3 VLANs, OSPF dynamic routing, switch port security, redundancy testing with Spanning Tree Protocol (STP).">
+          Conception et déploiement d'un réseau LAN d'entreprise sous GNS3 : 3 VLANs, routage dynamique OSPF, sécurisation des ports de commutateurs, test de redondance avec Spanning Tree Protocol (STP).
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">GNS3</span>
+          <span class="project-tag">Cisco IOS</span>
+          <span class="project-tag">VLAN / Trunk</span>
+          <span class="project-tag">OSPF</span>
+          <span class="project-tag">STP</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span data-i18n="footer.copy">Fait avec ❤️ par Ayoub RAFIK</span>
+  <span class="mono">//</span>
+  <a href="https://pages.github.com" target="_blank" data-i18n="footer.host">Hébergé sur GitHub Pages</a>
+</footer>
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>

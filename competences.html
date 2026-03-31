@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compétences | Ayoub RAFIK</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="./index.html" class="nav-logo">&lt;AR/&gt;</a>
+  <div class="nav-links">
+    <a href="./index.html"                data-i18n="nav.home">Accueil</a>
+    <a href="./a-propos.html"             data-i18n="nav.about">À propos</a>
+    <a href="./bts-sio.html"              data-i18n="nav.bts">BTS SIO</a>
+    <a href="./epreuve-e5.html"           data-i18n="nav.e5">Épreuve E5</a>
+    <a href="./epreuve-e6.html"           data-i18n="nav.e6">Épreuve E6</a>
+    <a href="./veille-technologique.html" data-i18n="nav.veille">Veille</a>
+    <a href="./competences.html"          data-i18n="nav.skills">Compétences</a>
+    <a href="./contact.html"              data-i18n="nav.contact">Contact</a>
+  </div>
+  <div class="nav-controls">
+    <button class="btn-icon js-lang-btn"  onclick="toggleLang()">EN</button>
+    <button class="btn-icon js-theme-btn" onclick="toggleTheme()">☀️ Light</button>
+  </div>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div id="navDrawer" class="nav-drawer">
+  <a href="./index.html"                data-i18n="nav.home">Accueil</a>
+  <a href="./a-propos.html"             data-i18n="nav.about">À propos</a>
+  <a href="./bts-sio.html"              data-i18n="nav.bts">BTS SIO</a>
+  <a href="./epreuve-e5.html"           data-i18n="nav.e5">Épreuve E5</a>
+  <a href="./epreuve-e6.html"           data-i18n="nav.e6">Épreuve E6</a>
+  <a href="./veille-technologique.html" data-i18n="nav.veille">Veille technologique</a>
+  <a href="./competences.html"          data-i18n="nav.skills">Compétences</a>
+  <a href="./contact.html"              data-i18n="nav.contact">Contact</a>
+  <div class="drawer-controls">
+    <button class="btn-icon js-lang-btn"  onclick="toggleLang()">EN</button>
+    <button class="btn-icon js-theme-btn" onclick="toggleTheme()">☀️ Light</button>
+  </div>
+</div>
+
+<div class="page">
+
+  <header class="page-header">
+    <span class="page-header-label">// competences.bts</span>
+    <h1 class="page-header-title"
+        data-fr="Référentiel de Compétences BTS SIO"
+        data-en="BTS SIO Skills Framework">Référentiel de Compétences BTS SIO</h1>
+    <p class="page-header-sub"
+       data-fr="Les 6 blocs de compétences du BTS SIO — ce que j'ai fait en formation et en autonomie pour chacun."
+       data-en="The 6 BTS SIO competency blocks — what I've done in training and on my own to cover each one.">
+      Les 6 blocs de compétences du BTS SIO — ce que j'ai fait en formation et en autonomie pour chacun.
+    </p>
+  </header>
+
+  <div class="section">
+
+    <!-- Technical skills summary -->
+    <div class="section-header fade-up">
+      <span class="section-label">// hard.skills</span>
+      <h2 class="section-title"
+          data-fr="Compétences <span>techniques</span>"
+          data-en="Technical <span>Skills</span>">Compétences <span>techniques</span></h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="skills-grid stagger fade-up" style="margin-bottom:3.5rem">
+      <div class="skill-group">
+        <div class="skill-group-title"
+             data-fr="Réseaux" data-en="Networks">Réseaux</div>
+        <div class="tags">
+          <span class="tag hi">Cisco IOS</span>
+          <span class="tag hi">VLAN / Trunk</span>
+          <span class="tag hi">OSPF / RIP</span>
+          <span class="tag hi">IPv4 / CIDR</span>
+          <span class="tag">DNS / DHCP</span>
+          <span class="tag">NAT / PAT</span>
+          <span class="tag">STP</span>
+          <span class="tag">Port-Security</span>
+          <span class="tag">GNS3</span>
+          <span class="tag">Packet Tracer</span>
+          <span class="tag">EVE-NG</span>
+          <span class="tag">RJ45 Cat6</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title"
+             data-fr="Systèmes" data-en="Systems">Systèmes</div>
+        <div class="tags">
+          <span class="tag hi">Linux Debian/Ubuntu</span>
+          <span class="tag hi">Windows Server 2022</span>
+          <span class="tag hi">Active Directory</span>
+          <span class="tag">GPO</span>
+          <span class="tag">Bash scripting</span>
+          <span class="tag">systemctl</span>
+          <span class="tag">Netplan</span>
+          <span class="tag">apt / yum</span>
+          <span class="tag">SSH / RDP</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title"
+             data-fr="Virtualisation" data-en="Virtualization">Virtualisation</div>
+        <div class="tags">
+          <span class="tag hi">VMware ESXi 6.7</span>
+          <span class="tag hi">vCenter / vMotion</span>
+          <span class="tag hi">KVM / QEMU</span>
+          <span class="tag hi">OpenStack</span>
+          <span class="tag">VirtualBox</span>
+          <span class="tag">VMware Workstation</span>
+          <span class="tag">Hyper-V</span>
+          <span class="tag">iSCSI SAN</span>
+          <span class="tag">NFS</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title"
+             data-fr="Supervision & Sécurité" data-en="Monitoring & Security">Supervision & Sécurité</div>
+        <div class="tags">
+          <span class="tag hi">Wireshark</span>
+          <span class="tag">Nagios</span>
+          <span class="tag">Zabbix</span>
+          <span class="tag">Nmap</span>
+          <span class="tag">Ping / Traceroute</span>
+          <span class="tag">UFW Firewall</span>
+          <span class="tag">GLPI</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BTS Competence Blocks -->
+    <div class="section-header fade-up">
+      <span class="section-label">// blocs.compétences</span>
+      <h2 class="section-title"
+          data-fr="Blocs de <span>compétences</span>"
+          data-en="Competency <span>Blocks</span>">Blocs de <span>compétences</span></h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="fade-up">
+
+      <!-- Bloc 1 -->
+      <div class="bloc-section">
+        <div class="bloc-header">
+          <span><span class="bloc-number">B1</span>
+            <span data-fr="Gérer le patrimoine informatique"
+                  data-en="Managing IT Assets">Gérer le patrimoine informatique</span>
+          </span>
+          <span class="bloc-toggle">▾</span>
+        </div>
+        <div class="bloc-body">
+
+          <div class="competence-item">
+            <div class="competence-title"
+                 data-fr="C1.1 — Recenser et identifier les ressources numériques"
+                 data-en="C1.1 — Inventory and identify digital resources">C1.1 — Recenser et identifier les ressources numériques</div>
+            <div class="competence-context"
+                 data-fr="Réalisation en formation"
+                 data-en="Training achievement">Réalisation en formation</div>
+            <div class="competence-body"
+                 data-fr="Recensement d'un parc informatique avec GLPI : installation et configuration de GLPI sur un serveur Debian, import des équipements via OCS Inventory, création de fiches détaillées (matériels, logiciels, licences)."
+                 data-en="IT asset inventory with GLPI: installation and configuration of GLPI on a Debian server, equipment import via OCS Inventory, creation of detailed records (hardware, software, licenses).">
+              Recensement d'un parc informatique avec GLPI : installation et configuration de GLPI sur un serveur Debian, import des équipements via OCS Inventory, création de fiches détaillées (matériels, logiciels, licences).
+            </div>
+          </div>
+
+          <div class="competence-item">
+            <div class="competence-title"
+                 data-fr="C1.2 — Exploiter des référentiels, normes et standards adoptés par le prestataire informatique"
+                 data-en="C1.2 — Use frameworks, standards and norms adopted by the IT provider">C1.2 — Exploiter des référentiels, normes et standards</div>
+            <div class="competence-context"
+                 data-fr="Réalisation en formation"
+                 data-en="Training achievement">Réalisation en formation</div>
+            <div class="competence-body"
+                 data-fr="Application des normes TIA/EIA-568 pour le câblage structuré RJ45 catégorie 6. Respect des normes de sécurité électrique en salle serveur (onduleurs, mise à la terre, détection incendie)."
+                 data-en="Application of TIA/EIA-568 standards for Cat6 RJ45 structured cabling. Compliance with electrical safety standards in server rooms (UPS, grounding, fire detection).">
+              Application des normes TIA/EIA-568 pour le câblage structuré RJ45 catégorie 6. Respect des normes de sécurité électrique en salle serveur (onduleurs, mise à la terre, détection incendie).
+            </div>
+          </div>
+
+          <div class="competence-item">
+            <div class="competence-title"
+                 data-fr="C1.3 — Mettre en place et vérifier les niveaux d'habilitation associés à un service"
+                 data-en="C1.3 — Implement and verify authorization levels for a service">C1.3 — Mettre en place et vérifier les niveaux d'habilitation</div>
+            <div class="competence-context"
+                 data-fr="Réalisation en formation"
+                 data-en="Training achievement">Réalisation en formation</div>
+            <div class="competence-body"
+                 data-fr="Configuration des permissions utilisateurs sous Linux (chmod, chown, groupes) et sous Windows Server (ACL, groupes de sécurité Active Directory, stratégies GPO de restriction d'accès)."
+                 data-en="User permission configuration under Linux (chmod, chown, groups) and Windows Server (ACL, Active Directory security groups, GPO access restriction policies).">
+              Configuration des permissions utilisateurs sous Linux (chmod, chown, groupes) et sous Windows Server (ACL, groupes de sécurité Active Directory, stratégies GPO de restriction d'accès).
+            </div>
+          </div>
+
+          <div class="competence-item">
+            <div class="competence-title"
+                 data-fr="C1.4 — Vérifier les conditions de la continuité d'un service informatique"
+                 data-en="C1.4 — Verify conditions for IT service continuity">C1.4 — Vérifier les conditions de la continuité d'un service</div>
+            <div class="competence-context"
+                 data-fr="Réalisation en formation"
+                 data-en="Training achievement">Réalisation en formation</div>
+            <div class="competence-body"
+                 data-fr="Configuration de VMware High Availability (HA) et Fault Tolerance (FT) sur un cluster ESXi pour assurer la continuité de service en cas de panne d'un hôte. Tests de bascule automatique validés."
+                 data-en="Configuration of VMware High Availability (HA) and Fault Tolerance (FT) on an ESXi cluster to ensure service continuity in case of host failure. Automatic failover tests validated.">
+              Configuration de VMware High Availability (HA) et Fault Tolerance (FT) sur un cluster ESXi pour assurer la continuité de service en cas de panne d'un hôte. Tests de bascule automatique validés.
+            </div>
+          </div>
+
+          <div class="competence-item">
+            <div class="competence-title"
+                 data-fr="C1.5 — Gérer des sauvegardes"
+                 data-en="C1.5 — Manage backups">C1.5 — Gérer des sauvegardes</div>
+            <div class="competence-context"
+                 data-fr="Réalisation en formation"
+                 data-en="Training achievement">Réalisation en formation</div>
+            <div class="competence-body"
+                 data-fr="Écriture de scripts Bash pour l'automatisation de sauvegardes (backup automatique de répertoires avec rotation de logs). Mise en place d'une stratégie 3-2-1 (3 copies, 2 supports, 1 hors site)."
+                 data-en="Writing Bash scripts for backup automation (automatic directory backup with log rotation). Implementation of a 3-2-1 strategy (3 copies, 2 media types, 1 off-site).">
+              Écriture de scripts Bash pour l'automatisation de sauvegardes (backup automatique de répertoires avec rotation de logs). Mise en place d'une stratégie 3-2-1.
+            </div>
+          </div>
+
+          <div class="competence-item">
+            <div class="competence-title"
+                 data-fr="C1.6 — Vérifier le respect des règles d'utilisation des ressources numériques"
+                 data-en="C1.6 — Verify compliance with digital resource usage rules">C1.6 — Vérifier le respect des règles d'utilisation</div>
+            <div class="competence-context" data-fr="À compléter" data-en="To be completed">À compléter</div>
+            <div class="competence-body"><span class="badge-todo">⏳ En cours</span></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Bloc 2 -->
+      <div class="bloc-section">
+        <div class="bloc-header">
+          <span><span class="bloc-number">B2</span>
+            <span data-fr="Répondre aux incidents et aux demandes d'assistance"
+                  data-en="Respond to incidents and assistance requests">Répondre aux incidents et aux demandes d'assistance</span>
+          </span>
+          <span class="bloc-toggle">▾</span>
+        </div>
+        <div class="bloc-body">
+
+          <div class="competence-item">
+            <div class="competence-title"
+                 data-fr="C2.1 — Collecter, suivre et orienter des demandes"
+                 data-en="C2.1 — Collect, track and route requests">C2.1 — Collecter, suivre et orienter des demandes</div>
+            <div class="competence-context" data-fr="À compléter" data-en="To be completed">À compléter</div>
+            <div class="competence-body"><span class="badge-todo">⏳ En cours</span></div>
+          </div>
+
+          <div class="competence-item">
+            <div class="competence-title"
+                 data-fr="C2.2 — Traiter des demandes concernant les services réseau et système"
+                 data-en="C2.2 — Handle requests relating to network and system services">C2.2 — Traiter des demandes réseau et système</div>
+            <div class="competence-context"
+                 data-fr="Réalisation en formation"
+                 data-en="Training achievement">Réalisation en formation</div>
+            <div class="competence-body"
+                 data-fr="Simulation et résolution d'incidents réseau : panne DNS (reconfiguration resolv.conf), perte de bail DHCP (renouvellement, diagnostic avec ipconfig/ip a), perte de connectivité (traceroute, ping, analyse Wireshark)."
+                 data-en="Network incident simulation and resolution: DNS failure (resolv.conf reconfiguration), lost DHCP lease (renewal, diagnosis with ipconfig/ip a), connectivity loss (traceroute, ping, Wireshark analysis).">
+              Simulation et résolution d'incidents réseau : panne DNS, perte de bail DHCP, perte de connectivité — diagnostic avec ipconfig, tracert, Wireshark.
+            </div>
+          </div>
+
+          <div class="competence-item">
+            <div class="competence-title"
+                 data-fr="C2.3 — Traiter des demandes concernant les applications"
+                 data-en="C2.3 — Handle requests relating to applications">C2.3 — Traiter des demandes concernant les applications</div>
+            <div class="competence-context" data-fr="À compléter" data-en="To be completed">À compléter</div>
+            <div class="competence-body"><span class="badge-todo">⏳ En cours</span></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Bloc 3 -->
+      <div class="bloc-section">
+        <div class="bloc-header">
+          <span><span class="bloc-number">B3</span>
+            <span data-fr="Développer la présence en ligne de l'organisation"
+                  data-en="Develop the organization's online presence">Développer la présence en ligne de l'organisation</span>
+          </span>
+          <span class="bloc-toggle">▾</span>
+        </div>
+        <div class="bloc-body">
+
+          <div class="competence-item">
+            <div class="competence-title"
+                 data-fr="C3.1 — Participer à la valorisation de l'image de l'organisation sur les médias numériques"
+                 data-en="C3.1 — Contribute to the organization's image on digital media">C3.1 — Valoriser l'image de l'organisation sur les médias numériques</div>
+            <div class="competence-context"
+                 data-fr="Réalisation en formation"
+                 data-en="Training achievement">Réalisation en formation</div>
+            <div class="competence-body"
+                 data-fr="Conception de ce portfolio personnel en HTML/CSS/JS pour valoriser mon profil professionnel en ligne, avec version bilingue FR/EN et mode sombre/clair."
+                 data-en="Design of this personal portfolio in HTML/CSS/JS to enhance my professional online profile, with bilingual FR/EN version and dark/light mode.">
+              Conception de ce portfolio personnel en HTML/CSS/JS pour valoriser mon profil professionnel en ligne, avec version bilingue FR/EN et mode sombre/clair.
+            </div>
+          </div>
+
+          <div class="competence-item">
+            <div class="competence-title"
+                 data-fr="C3.2 — Référencer les services en ligne et mesurer leur visibilité"
+                 data-en="C3.2 — Reference online services and measure their visibility">C3.2 — Référencer les services en ligne et mesurer leur visibilité</div>
+            <div class="competence-context" data-fr="À compléter" data-en="To be completed">À compléter</div>
+            <div class="competence-body"><span class="badge-todo">⏳ En cours</span></div>
+          </div>
+
+          <div class="competence-item">
+            <div class="competence-title"
+                 data-fr="C3.3 — Participer à l'évolution d'un site Web exploitant les données de l'organisation"
+                 data-en="C3.3 — Participate in evolving a website using organizational data">C3.3 — Participer à l'évolution d'un site Web</div>
+            <div class="competence-context"
+                 data-fr="Réalisation en formation"
+                 data-en="Training achievement">Réalisation en formation</div>
+            <div class="competence-body"
+                 data-fr="Développement d'une application web multi-tiers de suivi de consommation d'énergie : front-end HTML/CSS, back-end PHP, base de données MySQL. Gestion des formulaires, authentification et affichage dynamique des données."
+                 data-en="Development of a multi-tier energy consumption tracking web application: HTML/CSS front-end, PHP back-end, MySQL database. Form handling, authentication and dynamic data display.">
+              Développement d'une application web multi-tiers de suivi de consommation d'énergie : HTML/CSS, PHP, MySQL.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Bloc 4 -->
+      <div class="bloc-section">
+        <div class="bloc-header">
+          <span><span class="bloc-number">B4</span>
+            <span data-fr="Travailler en mode projet"
+                  data-en="Working in project mode">Travailler en mode projet</span>
+          </span>
+          <span class="bloc-toggle">▾</span>
+        </div>
+        <div class="bloc-body">
+
+          <div class="competence-item">
+            <div class="competence-title"
+                 data-fr="C4.1 — Analyser les objectifs et les modalités d'organisation d'un projet"
+                 data-en="C4.1 — Analyze the objectives and organizational methods of a project">C4.1 — Analyser les objectifs d'un projet</div>
+            <div class="competence-context"
+                 data-fr="Réalisation en formation"
+                 data-en="Training achievement">Réalisation en formation</div>
+            <div class="competence-body"
+                 data-fr="Pour chaque projet technique (OpenStack, GNS3, VMware), définition préalable des objectifs, des ressources nécessaires, des contraintes techniques et du planning de réalisation."
+                 data-en="For each technical project (OpenStack, GNS3, VMware), prior definition of objectives, required resources, technical constraints and implementation schedule.">
+              Pour chaque projet technique (OpenStack, GNS3, VMware), définition préalable des objectifs, des ressources et du planning de réalisation.
+            </div>
+          </div>
+
+          <div class="competence-item">
+            <div class="competence-title"
+                 data-fr="C4.2 — Planifier les activités"
+                 data-en="C4.2 — Plan activities">C4.2 — Planifier les activités</div>
+            <div class="competence-context" data-fr="À compléter" data-en="To be completed">À compléter</div>
+            <div class="competence-body"><span class="badge-todo">⏳ En cours</span></div>
+          </div>
+
+          <div class="competence-item">
+            <div class="competence-title"
+                 data-fr="C4.3 — Évaluer les indicateurs de suivi d'un projet"
+                 data-en="C4.3 — Evaluate project tracking indicators">C4.3 — Évaluer les indicateurs de suivi</div>
+            <div class="competence-context" data-fr="À compléter" data-en="To be completed">À compléter</div>
+            <div class="competence-body"><span class="badge-todo">⏳ En cours</span></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Bloc 5 -->
+      <div class="bloc-section">
+        <div class="bloc-header">
+          <span><span class="bloc-number">B5</span>
+            <span data-fr="Mettre à disposition des utilisateurs un service informatique"
+                  data-en="Make an IT service available to users">Mettre à disposition un service informatique</span>
+          </span>
+          <span class="bloc-toggle">▾</span>
+        </div>
+        <div class="bloc-body">
+
+          <div class="competence-item">
+            <div class="competence-title"
+                 data-fr="C5.1 — Réaliser les tests d'intégration et d'acceptation d'un service"
+                 data-en="C5.1 — Carry out integration and acceptance testing of a service">C5.1 — Tests d'intégration et d'acceptation</div>
+            <div class="competence-context"
+                 data-fr="Réalisation en formation"
+                 data-en="Training achievement">Réalisation en formation</div>
+            <div class="competence-body"
+                 data-fr="Tests de redondance réseau avec STP (Spanning Tree Protocol) sur le LAN GNS3 : simulation de pannes de liens, validation du basculement automatique, vérification des chemins de secours."
+                 data-en="Network redundancy testing with STP (Spanning Tree Protocol) on the GNS3 LAN: link failure simulation, automatic failover validation, backup path verification.">
+              Tests de redondance réseau avec STP sur le LAN GNS3 : simulation de pannes de liens, validation du basculement automatique.
+            </div>
+          </div>
+
+          <div class="competence-item">
+            <div class="competence-title"
+                 data-fr="C5.2 — Déployer un service"
+                 data-en="C5.2 — Deploy a service">C5.2 — Déployer un service</div>
+            <div class="competence-context"
+                 data-fr="Réalisation en formation"
+                 data-en="Training achievement">Réalisation en formation</div>
+            <div class="competence-body"
+                 data-fr="Déploiement d'un serveur web Apache sur Debian (stack LAMP), configuration du pare-feu UFW, exposition via NAT. Déploiement de services DHCP et DNS sous Windows Server 2022."
+                 data-en="Apache web server deployment on Debian (LAMP stack), UFW firewall configuration, NAT exposure. DHCP and DNS service deployment under Windows Server 2022.">
+              Déploiement Apache/LAMP sur Debian avec pare-feu UFW et NAT. Services DHCP/DNS sous Windows Server 2022.
+            </div>
+          </div>
+
+          <div class="competence-item">
+            <div class="competence-title"
+                 data-fr="C5.3 — Accompagner les utilisateurs dans la mise en place d'un service"
+                 data-en="C5.3 — Support users in implementing a service">C5.3 — Accompagner les utilisateurs</div>
+            <div class="competence-context" data-fr="À compléter" data-en="To be completed">À compléter</div>
+            <div class="competence-body"><span class="badge-todo">⏳ En cours</span></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Bloc 6 -->
+      <div class="bloc-section">
+        <div class="bloc-header">
+          <span><span class="bloc-number">B6</span>
+            <span data-fr="Organiser son développement professionnel"
+                  data-en="Organize one's professional development">Organiser son développement professionnel</span>
+          </span>
+          <span class="bloc-toggle">▾</span>
+        </div>
+        <div class="bloc-body">
+
+          <div class="competence-item">
+            <div class="competence-title"
+                 data-fr="C6.1 — Mettre en place son environnement d'apprentissage personnel"
+                 data-en="C6.1 — Set up a personal learning environment">C6.1 — Environnement d'apprentissage personnel</div>
+            <div class="competence-context"
+                 data-fr="Réalisation personnelle"
+                 data-en="Personal achievement">Réalisation personnelle</div>
+            <div class="competence-body"
+                 data-fr="Utilisation d'un homelab personnel (VirtualBox, VMware Workstation) pour pratiquer en dehors des cours. Suivi de formations sur Cisco NetAcad, Linux Academy, NetworkChuck et Root-Me pour les challenges cybersécurité."
+                 data-en="Use of a personal homelab (VirtualBox, VMware Workstation) to practice outside of class. Following courses on Cisco NetAcad, Linux Academy, NetworkChuck and Root-Me for cybersecurity challenges.">
+              Homelab personnel avec VirtualBox et VMware Workstation. Auto-formation sur Cisco NetAcad, Linux Academy, NetworkChuck et Root-Me.
+            </div>
+          </div>
+
+          <div class="competence-item">
+            <div class="competence-title"
+                 data-fr="C6.2 — Mettre en œuvre des outils et stratégies de veille informationnelle"
+                 data-en="C6.2 — Implement information monitoring tools and strategies">C6.2 — Veille informationnelle</div>
+            <div class="competence-context"
+                 data-fr="Réalisation personnelle"
+                 data-en="Personal achievement">Réalisation personnelle</div>
+            <div class="competence-body"
+                 data-fr="Mise en place d'une veille régulière sur la virtualisation et le cloud : suivi de blogs techniques (LeMagIT, ZDNet), communautés Reddit (r/sysadmin, r/networking) et chaînes YouTube spécialisées."
+                 data-en="Regular monitoring of virtualization and cloud topics: following tech blogs (LeMagIT, ZDNet), Reddit communities (r/sysadmin, r/networking) and specialized YouTube channels.">
+              Veille régulière sur la virtualisation et le cloud via blogs techniques, Reddit et YouTube.
+            </div>
+          </div>
+
+          <div class="competence-item">
+            <div class="competence-title"
+                 data-fr="C6.3 — Gérer son identité professionnelle"
+                 data-en="C6.3 — Manage one's professional identity">C6.3 — Identité professionnelle</div>
+            <div class="competence-context"
+                 data-fr="Réalisation personnelle"
+                 data-en="Personal achievement">Réalisation personnelle</div>
+            <div class="competence-body"
+                 data-fr="Création et maintien d'un profil LinkedIn professionnel. Développement de ce portfolio en ligne bilingue pour présenter mes compétences et projets de manière structurée."
+                 data-en="Creation and maintenance of a professional LinkedIn profile. Development of this bilingual online portfolio to present skills and projects in a structured manner.">
+              Profil LinkedIn actif et ce portfolio bilingue pour valoriser mes compétences professionnelles.
+            </div>
+          </div>
+
+          <div class="competence-item">
+            <div class="competence-title"
+                 data-fr="C6.4 — Développer son projet professionnel"
+                 data-en="C6.4 — Develop one's professional project">C6.4 — Projet professionnel</div>
+            <div class="competence-context"
+                 data-fr="Réalisation personnelle"
+                 data-en="Personal achievement">Réalisation personnelle</div>
+            <div class="competence-body"
+                 data-fr="Objectif : administrateur systèmes et réseaux, puis évolution vers la cybersécurité ou l'architecture cloud. En cours de préparation des certifications CCNA 200-301 et Linux Essentials LPI."
+                 data-en="Goal: systems and network administrator, then moving towards cybersecurity or cloud architecture. Currently preparing CCNA 200-301 and Linux Essentials LPI certifications.">
+              Objectif : administrateur systèmes/réseaux → cybersécurité ou cloud. Préparation CCNA 200-301 et Linux Essentials LPI.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span data-i18n="footer.copy">Fait avec ❤️ par Ayoub RAFIK</span>
+  <span class="mono">//</span>
+  <a href="https://pages.github.com" target="_blank" data-i18n="footer.host">Hébergé sur GitHub Pages</a>
+</footer>
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>

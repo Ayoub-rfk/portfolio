@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veille Technologique | Ayoub RAFIK</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="./index.html" class="nav-logo">&lt;AR/&gt;</a>
+  <div class="nav-links">
+    <a href="./index.html"                data-i18n="nav.home">Accueil</a>
+    <a href="./a-propos.html"             data-i18n="nav.about">À propos</a>
+    <a href="./bts-sio.html"              data-i18n="nav.bts">BTS SIO</a>
+    <a href="./epreuve-e5.html"           data-i18n="nav.e5">Épreuve E5</a>
+    <a href="./epreuve-e6.html"           data-i18n="nav.e6">Épreuve E6</a>
+    <a href="./veille-technologique.html" data-i18n="nav.veille">Veille</a>
+    <a href="./competences.html"          data-i18n="nav.skills">Compétences</a>
+    <a href="./contact.html"              data-i18n="nav.contact">Contact</a>
+  </div>
+  <div class="nav-controls">
+    <button class="btn-icon js-lang-btn"  onclick="toggleLang()">EN</button>
+    <button class="btn-icon js-theme-btn" onclick="toggleTheme()">☀️ Light</button>
+  </div>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div id="navDrawer" class="nav-drawer">
+  <a href="./index.html"                data-i18n="nav.home">Accueil</a>
+  <a href="./a-propos.html"             data-i18n="nav.about">À propos</a>
+  <a href="./bts-sio.html"              data-i18n="nav.bts">BTS SIO</a>
+  <a href="./epreuve-e5.html"           data-i18n="nav.e5">Épreuve E5</a>
+  <a href="./epreuve-e6.html"           data-i18n="nav.e6">Épreuve E6</a>
+  <a href="./veille-technologique.html" data-i18n="nav.veille">Veille technologique</a>
+  <a href="./competences.html"          data-i18n="nav.skills">Compétences</a>
+  <a href="./contact.html"              data-i18n="nav.contact">Contact</a>
+  <div class="drawer-controls">
+    <button class="btn-icon js-lang-btn"  onclick="toggleLang()">EN</button>
+    <button class="btn-icon js-theme-btn" onclick="toggleTheme()">☀️ Light</button>
+  </div>
+</div>
+
+<div class="page">
+
+  <header class="page-header">
+    <span class="page-header-label">// veille.technologique</span>
+    <h1 class="page-header-title"
+        data-fr="Veille Technologique"
+        data-en="Technology Watch">Veille Technologique</h1>
+    <p class="page-header-sub"
+       data-fr="Sujet : La virtualisation et le cloud computing dans les infrastructures modernes"
+       data-en="Topic: Virtualization and cloud computing in modern infrastructures">
+      Sujet : La virtualisation et le cloud computing dans les infrastructures modernes
+    </p>
+  </header>
+
+  <div class="section">
+
+    <div class="veille-intro fade-up"
+         data-fr="J'ai choisi de faire ma veille sur la <strong>virtualisation et le cloud</strong> parce que c'est ce que je pratique le plus dans mes projets — VMware, KVM, OpenStack. C'est aussi ce qui recrute en ce moment dans les métiers SISR, donc autant rester à jour sur les évolutions."
+         data-en="I chose to focus my tech watch on <strong>virtualization and cloud</strong> because that's what I work with the most in my projects — VMware, KVM, OpenStack. It's also where most SISR job opportunities are right now, so keeping up with it just makes sense.">
+      J'ai choisi de faire ma veille sur la <strong>virtualisation et le cloud</strong> parce que c'est ce que je pratique le plus dans mes projets — VMware, KVM, OpenStack. C'est aussi ce qui recrute en ce moment dans les métiers SISR, donc autant rester à jour sur les évolutions.
+    </div>
+
+    <!-- Concepts -->
+    <div class="section-header fade-up">
+      <span class="section-label">// concepts.clés</span>
+      <h2 class="section-title"
+          data-fr="Concepts <span>clés</span>"
+          data-en="Key <span>Concepts</span>">Concepts <span>clés</span></h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="veille-grid stagger fade-up">
+
+      <div class="veille-card">
+        <div class="veille-card-icon">🖥️</div>
+        <div class="veille-card-title"
+             data-fr="Virtualisation"
+             data-en="Virtualization">Virtualisation</div>
+        <div class="veille-card-body"
+             data-fr="En gros : faire tourner plusieurs OS sur une seule machine physique. J'ai pratiqué avec VMware ESXi et KVM — les hyperviseurs de type 1 tournent directement sur le métal, sans OS hôte en dessous. C'est ce qu'on retrouve dans tous les data centers aujourd'hui."
+             data-en="In short: running multiple OSes on a single physical machine. I've worked with VMware ESXi and KVM — type 1 hypervisors run directly on the hardware with no host OS underneath. That's what you find in every data center today.">
+          En gros : faire tourner plusieurs OS sur une seule machine physique. J'ai pratiqué avec VMware ESXi et KVM — les hyperviseurs de type 1 tournent directement sur le métal, sans OS hôte en dessous. C'est ce qu'on retrouve dans tous les data centers aujourd'hui.
+        </div>
+      </div>
+
+      <div class="veille-card">
+        <div class="veille-card-icon">☁️</div>
+        <div class="veille-card-title"
+             data-fr="Cloud Computing"
+             data-en="Cloud Computing">Cloud Computing</div>
+        <div class="veille-card-body"
+             data-fr="Des ressources (serveurs, stockage, réseau) accessibles à la demande sur Internet. IaaS, PaaS, SaaS — trois façons différentes de consommer le cloud. AWS, Azure et GCP se partagent le marché. Les offres hybrides (un pied on-premise, un pied cloud) explosent en ce moment."
+             data-en="Computing resources (servers, storage, networking) on demand over the internet. IaaS, PaaS, SaaS — three different ways to consume cloud. AWS, Azure and GCP share the market. Hybrid setups (one foot on-prem, one in the cloud) are growing fast right now.">
+          Des ressources (serveurs, stockage, réseau) accessibles à la demande sur Internet. IaaS, PaaS, SaaS — trois façons différentes de consommer le cloud. AWS, Azure et GCP se partagent le marché. Les offres hybrides (un pied on-premise, un pied cloud) explosent en ce moment.
+        </div>
+      </div>
+
+      <div class="veille-card">
+        <div class="veille-card-icon">🐳</div>
+        <div class="veille-card-title"
+             data-fr="Conteneurisation"
+             data-en="Containerization">Conteneurisation</div>
+        <div class="veille-card-body"
+             data-fr="Docker permet de packager une application avec tout ce dont elle a besoin — ça démarre en quelques secondes. Kubernetes gère plusieurs conteneurs en production (déploiement, redémarrage auto, load balancing). C'est la prochaine étape logique après la virtualisation, et je compte m'y mettre prochainement."
+             data-en="Docker lets you package an app with everything it needs — boots in seconds. Kubernetes manages multiple containers in production (deployment, auto-restart, load balancing). It's the natural next step after virtualization, and it's on my list to learn soon.">
+          Docker permet de packager une application avec tout ce dont elle a besoin — ça démarre en quelques secondes. Kubernetes gère plusieurs conteneurs en production (déploiement, redémarrage auto, load balancing). C'est la prochaine étape logique après la virtualisation, et je compte m'y mettre prochainement.
+        </div>
+      </div>
+
+      <div class="veille-card">
+        <div class="veille-card-icon">🔮</div>
+        <div class="veille-card-title"
+             data-fr="Tendances actuelles"
+             data-en="Current Trends">Tendances actuelles</div>
+        <div class="veille-card-body"
+             data-fr="L'infra as code (Terraform, Ansible) c'est ce qui change vraiment le métier — plus besoin de tout configurer à la main. Le Zero Trust s'impose dans les environnements hybrides. Et le Edge Computing commence à pointer son nez dans des projets IoT et industriels."
+             data-en="Infrastructure as code (Terraform, Ansible) is genuinely changing the job — no more manually configuring everything by hand. Zero Trust is becoming the standard in hybrid environments. And Edge Computing is starting to show up in IoT and industrial projects.">
+          L'infra as code (Terraform, Ansible) c'est ce qui change vraiment le métier — plus besoin de tout configurer à la main. Le Zero Trust s'impose dans les environnements hybrides. Et le Edge Computing commence à pointer son nez dans des projets IoT et industriels.
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Synthèse -->
+    <div class="section-header fade-up">
+      <span class="section-label">// synthèse</span>
+      <h2 class="section-title"
+          data-fr="<span>Synthèse</span> & Impact"
+          data-en="<span>Synthesis</span> & Impact"><span>Synthèse</span> & Impact</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="projects-grid stagger fade-up">
+      <div class="project-card">
+        <div class="project-icon">📈</div>
+        <div class="project-title"
+             data-fr="Impact sur les métiers SISR"
+             data-en="Impact on SISR Careers">Impact sur les métiers SISR</div>
+        <div class="project-desc"
+             data-fr="La virtualisation et le cloud ont transformé le rôle de l'administrateur systèmes : les compétences en déploiement automatisé, gestion de clusters et orchestration de conteneurs sont devenues indispensables sur le marché du travail."
+             data-en="Virtualization and cloud have transformed the role of systems administrators: skills in automated deployment, cluster management and container orchestration have become essential in the job market.">
+          La virtualisation et le cloud ont transformé le rôle de l'administrateur systèmes : les compétences en déploiement automatisé, gestion de clusters et orchestration de conteneurs sont devenues indispensables sur le marché du travail.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">VMware</span>
+          <span class="project-tag">OpenStack</span>
+          <span class="project-tag">Kubernetes</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-icon">🎯</div>
+        <div class="project-title"
+             data-fr="Application dans mes projets"
+             data-en="Application in my projects">Application dans mes projets</div>
+        <div class="project-desc"
+             data-fr="Mes projets de virtualisation (VMware ESXi, OpenStack, KVM) m'ont permis d'appliquer concrètement les concepts étudiés. La migration live KVM illustre parfaitement les enjeux de disponibilité des services en environnement virtualisé."
+             data-en="My virtualization projects (VMware ESXi, OpenStack, KVM) allowed me to concretely apply the studied concepts. KVM live migration perfectly illustrates the service availability challenges in virtualized environments.">
+          Mes projets de virtualisation (VMware ESXi, OpenStack, KVM) m'ont permis d'appliquer concrètement les concepts étudiés. La migration live KVM illustre parfaitement les enjeux de disponibilité des services en environnement virtualisé.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">KVM Live Migration</span>
+          <span class="project-tag">vMotion</span>
+          <span class="project-tag">HA / FT</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-icon">🚀</div>
+        <div class="project-title"
+             data-fr="Perspectives & Évolutions"
+             data-en="Outlook & Future Developments">Perspectives & Évolutions</div>
+        <div class="project-desc"
+             data-fr="Les prochaines étapes de ma montée en compétences incluent Docker et Kubernetes, Terraform pour l'infrastructure as code, et la certification AWS Cloud Practitioner pour maîtriser les environnements cloud publics."
+             data-en="The next steps in my skill development include Docker and Kubernetes, Terraform for infrastructure as code, and the AWS Cloud Practitioner certification to master public cloud environments.">
+          Les prochaines étapes de ma montée en compétences incluent Docker et Kubernetes, Terraform pour l'infrastructure as code, et la certification AWS Cloud Practitioner pour maîtriser les environnements cloud publics.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">Docker</span>
+          <span class="project-tag">Kubernetes</span>
+          <span class="project-tag">Terraform</span>
+          <span class="project-tag">AWS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="section-header fade-up" style="margin-top:3rem">
+      <span class="section-label">// sources</span>
+      <h2 class="section-title"
+          data-fr="Sources de <span>veille</span>"
+          data-en="Watch <span>Sources</span>">Sources de <span>veille</span></h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="sources-list stagger fade-up">
+      <div class="source-item">
+        <span class="source-icon">🎥</span>
+        <div>
+          <strong>NetworkChuck</strong> —
+          <span data-fr="YouTube / Blog — Réseaux, Linux, Cloud, tutoriels pratiques"
+                data-en="YouTube / Blog — Networking, Linux, Cloud, practical tutorials">
+            YouTube / Blog — Réseaux, Linux, Cloud, tutoriels pratiques
+          </span>
+        </div>
+      </div>
+      <div class="source-item">
+        <span class="source-icon">🏋️</span>
+        <div>
+          <strong>Root-Me</strong> —
+          <span data-fr="Plateforme de challenges réseau et cybersécurité"
+                data-en="Network and cybersecurity challenges platform">
+            Plateforme de challenges réseau et cybersécurité
+          </span>
+        </div>
+      </div>
+      <div class="source-item">
+        <span class="source-icon">📚</span>
+        <div>
+          <strong>Cisco NetAcad</strong> —
+          <span data-fr="Cours officiels CCNA, Linux Essentials, cybersécurité"
+                data-en="Official CCNA, Linux Essentials, cybersecurity courses">
+            Cours officiels CCNA, Linux Essentials, cybersécurité
+          </span>
+        </div>
+      </div>
+      <div class="source-item">
+        <span class="source-icon">🐧</span>
+        <div>
+          <strong>Linux Academy / A Cloud Guru</strong> —
+          <span data-fr="Formations Linux, cloud AWS/Azure, DevOps"
+                data-en="Linux, AWS/Azure cloud, DevOps training">
+            Formations Linux, cloud AWS/Azure, DevOps
+          </span>
+        </div>
+      </div>
+      <div class="source-item">
+        <span class="source-icon">📰</span>
+        <div>
+          <strong>LeMagIT / ZDNet France</strong> —
+          <span data-fr="Actualités IT, virtualisation, cloud, cybersécurité en français"
+                data-en="IT news, virtualization, cloud, cybersecurity in French">
+            Actualités IT, virtualisation, cloud, cybersécurité en français
+          </span>
+        </div>
+      </div>
+      <div class="source-item">
+        <span class="source-icon">💬</span>
+        <div>
+          <strong>Reddit r/sysadmin · r/networking</strong> —
+          <span data-fr="Communautés d'administrateurs systèmes et réseaux"
+                data-en="Systems and network administrators communities">
+            Communautés d'administrateurs systèmes et réseaux
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <span data-i18n="footer.copy">Fait avec ❤️ par Ayoub RAFIK</span>
+  <span class="mono">//</span>
+  <a href="https://pages.github.com" target="_blank" data-i18n="footer.host">Hébergé sur GitHub Pages</a>
+</footer>
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>

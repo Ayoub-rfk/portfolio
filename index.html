@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio d'Ayoub RAFIK — Étudiant BTS SIO option SISR à l'EFREI, spécialisé en réseaux et systèmes.">
+  <title>Ayoub RAFIK — Portfolio</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="./index.html" class="nav-logo">&lt;AR/&gt;</a>
+  <div class="nav-links">
+    <a href="./index.html"                   data-i18n="nav.home">Accueil</a>
+    <a href="./a-propos.html"                data-i18n="nav.about">À propos</a>
+    <a href="./bts-sio.html"                 data-i18n="nav.bts">BTS SIO</a>
+    <a href="./epreuve-e5.html"              data-i18n="nav.e5">Épreuve E5</a>
+    <a href="./epreuve-e6.html"              data-i18n="nav.e6">Épreuve E6</a>
+    <a href="./veille-technologique.html"    data-i18n="nav.veille">Veille</a>
+    <a href="./competences.html"             data-i18n="nav.skills">Compétences</a>
+    <a href="./contact.html"                 data-i18n="nav.contact">Contact</a>
+  </div>
+  <div class="nav-controls">
+    <button class="btn-icon js-lang-btn"  onclick="toggleLang()">EN</button>
+    <button class="btn-icon js-theme-btn" onclick="toggleTheme()">☀️ Light</button>
+  </div>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div id="navDrawer" class="nav-drawer">
+  <a href="./index.html"                data-i18n="nav.home">Accueil</a>
+  <a href="./a-propos.html"             data-i18n="nav.about">À propos</a>
+  <a href="./bts-sio.html"              data-i18n="nav.bts">BTS SIO</a>
+  <a href="./epreuve-e5.html"           data-i18n="nav.e5">Épreuve E5</a>
+  <a href="./epreuve-e6.html"           data-i18n="nav.e6">Épreuve E6</a>
+  <a href="./veille-technologique.html" data-i18n="nav.veille">Veille technologique</a>
+  <a href="./competences.html"          data-i18n="nav.skills">Compétences</a>
+  <a href="./contact.html"              data-i18n="nav.contact">Contact</a>
+  <div class="drawer-controls">
+    <button class="btn-icon js-lang-btn"  onclick="toggleLang()">EN</button>
+    <button class="btn-icon js-theme-btn" onclick="toggleTheme()">☀️ Light</button>
+  </div>
+</div>
+
+<div class="page">
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-inner">
+
+      <img src="./images/image.png" alt="Photo d'Ayoub RAFIK" class="hero-photo">
+
+      <div class="hero-content">
+        <p class="hero-greeting"
+           data-fr="Bonjour, je suis"
+           data-en="Hi, I'm">
+          Bonjour, je suis
+        </p>
+
+        <h1 class="hero-name">
+          Ayoub&nbsp;<span>RAFIK</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          <span id="typewriter" class="typewriter"></span>
+        </p>
+
+        <p class="hero-desc"
+           data-fr="Je suis en BTS SIO option SISR à l'EFREI. Les réseaux, les serveurs, la virtualisation — c'est ce qui me passionne vraiment. Je cherche une alternance à partir de septembre 2025."
+           data-en="I'm studying BTS SIO (SISR track) at EFREI. Networks, servers, virtualization — that's what I genuinely enjoy. Looking for a work-study contract from September 2025.">
+          Je suis en BTS SIO option SISR à l'EFREI. Les réseaux, les serveurs, la virtualisation — c'est ce qui me passionne vraiment. Je cherche une alternance à partir de septembre 2025.
+        </p>
+
+        <div class="hero-cta">
+          <a href="./a-propos.html" class="btn-primary"
+             data-fr="En savoir plus" data-en="About me">
+            En savoir plus
+          </a>
+          <a href="./assets/docs/CV_RAFIK_Ayoub.pdf" class="btn-secondary" download
+             data-fr="⬇ Mon CV" data-en="⬇ My CV">
+            ⬇ Mon CV
+          </a>
+        </div>
+
+        <div class="hero-links">
+          <a href="https://fr.linkedin.com/in/ayoub-rafik-22186b313" class="social-link" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="./contact.html" class="social-link"
+             data-fr="✉ Me contacter" data-en="✉ Contact me">
+            ✉ Me contacter
+          </a>
+          <a href="./assets/docs/CV_RAFIK_Ayoub.pdf" class="social-link" target="_blank">
+            📄 CV
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<footer>
+  <span data-i18n="footer.copy">Fait avec ❤️ par Ayoub RAFIK</span>
+  <span class="mono">//</span>
+  <a href="https://pages.github.com" target="_blank" data-i18n="footer.host">Hébergé sur GitHub Pages</a>
+</footer>
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>

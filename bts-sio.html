@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BTS SIO | Ayoub RAFIK</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="./index.html" class="nav-logo">&lt;AR/&gt;</a>
+  <div class="nav-links">
+    <a href="./index.html"                data-i18n="nav.home">Accueil</a>
+    <a href="./a-propos.html"             data-i18n="nav.about">À propos</a>
+    <a href="./bts-sio.html"              data-i18n="nav.bts">BTS SIO</a>
+    <a href="./epreuve-e5.html"           data-i18n="nav.e5">Épreuve E5</a>
+    <a href="./epreuve-e6.html"           data-i18n="nav.e6">Épreuve E6</a>
+    <a href="./veille-technologique.html" data-i18n="nav.veille">Veille</a>
+    <a href="./competences.html"          data-i18n="nav.skills">Compétences</a>
+    <a href="./contact.html"              data-i18n="nav.contact">Contact</a>
+  </div>
+  <div class="nav-controls">
+    <button class="btn-icon js-lang-btn"  onclick="toggleLang()">EN</button>
+    <button class="btn-icon js-theme-btn" onclick="toggleTheme()">☀️ Light</button>
+  </div>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div id="navDrawer" class="nav-drawer">
+  <a href="./index.html"                data-i18n="nav.home">Accueil</a>
+  <a href="./a-propos.html"             data-i18n="nav.about">À propos</a>
+  <a href="./bts-sio.html"              data-i18n="nav.bts">BTS SIO</a>
+  <a href="./epreuve-e5.html"           data-i18n="nav.e5">Épreuve E5</a>
+  <a href="./epreuve-e6.html"           data-i18n="nav.e6">Épreuve E6</a>
+  <a href="./veille-technologique.html" data-i18n="nav.veille">Veille technologique</a>
+  <a href="./competences.html"          data-i18n="nav.skills">Compétences</a>
+  <a href="./contact.html"              data-i18n="nav.contact">Contact</a>
+  <div class="drawer-controls">
+    <button class="btn-icon js-lang-btn"  onclick="toggleLang()">EN</button>
+    <button class="btn-icon js-theme-btn" onclick="toggleTheme()">☀️ Light</button>
+  </div>
+</div>
+
+<div class="page">
+
+  <header class="page-header">
+    <span class="page-header-label">// bts.sio</span>
+    <h1 class="page-header-title"
+        data-fr="Le BTS SIO"
+        data-en="The BTS SIO">Le BTS SIO</h1>
+    <p class="page-header-sub"
+       data-fr="Brevet de Technicien Supérieur — Services Informatiques aux Organisations"
+       data-en="Advanced Technician's Certificate — IT Services for Organizations">
+      Brevet de Technicien Supérieur — Services Informatiques aux Organisations
+    </p>
+  </header>
+
+  <div class="section">
+
+    <div class="bts-intro fade-up"
+         data-fr="Le <strong>BTS SIO (Services Informatiques aux Organisations)</strong> est un diplôme d'État de niveau Bac+2 qui forme des techniciens capables de répondre aux besoins informatiques des entreprises et organisations. Il prépare à des métiers dans la gestion de réseaux, l'administration de systèmes, la cybersécurité, le développement d'applications et le support technique. La formation est composée d'un tronc commun (culture générale, mathématiques, économie-droit, anglais) et de matières spécialisées selon l'option choisie, ainsi que de périodes en entreprise."
+         data-en="The <strong>BTS SIO (IT Services for Organizations)</strong> is a 2-year French state diploma that trains technicians to meet the IT needs of companies and organizations. It prepares for careers in network management, systems administration, cybersecurity, application development, and technical support. The curriculum includes common subjects (general culture, mathematics, economics, English) and specialized courses depending on the chosen track, along with work placements.">
+      Le <strong>BTS SIO (Services Informatiques aux Organisations)</strong> est un diplôme d'État de niveau Bac+2 qui forme des techniciens capables de répondre aux besoins informatiques des entreprises et organisations. Il prépare à des métiers dans la gestion de réseaux, l'administration de systèmes, la cybersécurité, le développement d'applications et le support technique. La formation est composée d'un tronc commun (culture générale, mathématiques, économie-droit, anglais) et de matières spécialisées selon l'option choisie, ainsi que de périodes en entreprise.
+    </div>
+
+    <!-- Options grid -->
+    <div class="section-header fade-up">
+      <span class="section-label">// options</span>
+      <h2 class="section-title"
+          data-fr="Les deux <span>options</span>"
+          data-en="The two <span>tracks</span>">
+        Les deux <span>options</span>
+      </h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="options-grid fade-up">
+
+      <!-- SISR — his option -->
+      <div class="option-card active">
+        <div class="option-badge"
+             data-fr="Mon option ✓"
+             data-en="My track ✓">Mon option ✓</div>
+        <h3 data-fr="Option SISR"
+            data-en="SISR Track">Option SISR</h3>
+        <p class="option-full"
+           data-fr="Solutions d'Infrastructure, Systèmes et Réseaux"
+           data-en="Infrastructure, Systems and Networks Solutions">
+          Solutions d'Infrastructure, Systèmes et Réseaux
+        </p>
+        <ul>
+          <li data-fr="Gestion et maintenance du parc informatique"
+              data-en="IT asset management and maintenance">Gestion et maintenance du parc informatique</li>
+          <li data-fr="Installation et configuration de serveurs et réseaux"
+              data-en="Server and network installation and configuration">Installation et configuration de serveurs et réseaux</li>
+          <li data-fr="Administration systèmes Linux et Windows Server"
+              data-en="Linux and Windows Server systems administration">Administration systèmes Linux et Windows Server</li>
+          <li data-fr="Virtualisation (VMware, KVM, OpenStack)"
+              data-en="Virtualization (VMware, KVM, OpenStack)">Virtualisation (VMware, KVM, OpenStack)</li>
+          <li data-fr="Cybersécurité et sécurisation des infrastructures"
+              data-en="Cybersecurity and infrastructure hardening">Cybersécurité et sécurisation des infrastructures</li>
+          <li data-fr="Support technique aux utilisateurs"
+              data-en="Technical user support">Support technique aux utilisateurs</li>
+        </ul>
+      </div>
+
+      <!-- SLAM -->
+      <div class="option-card">
+        <div class="option-badge" style="background:var(--bg3);color:var(--text2);border:1px solid var(--border)">SLAM</div>
+        <h3 data-fr="Option SLAM"
+            data-en="SLAM Track">Option SLAM</h3>
+        <p class="option-full"
+           data-fr="Solutions Logicielles et Applications Métier"
+           data-en="Software Solutions and Business Applications">
+          Solutions Logicielles et Applications Métier
+        </p>
+        <ul>
+          <li data-fr="Conception et développement d'applications web et mobile"
+              data-en="Design and development of web and mobile applications">Conception et développement d'applications web et mobile</li>
+          <li data-fr="Analyse des besoins et modélisation (UML, Merise)"
+              data-en="Needs analysis and modeling (UML, Merise)">Analyse des besoins et modélisation (UML, Merise)</li>
+          <li data-fr="Gestion de bases de données (SQL, MySQL, PostgreSQL)"
+              data-en="Database management (SQL, MySQL, PostgreSQL)">Gestion de bases de données (SQL, MySQL, PostgreSQL)</li>
+          <li data-fr="Langages : PHP, Java, Python, JavaScript"
+              data-en="Languages: PHP, Java, Python, JavaScript">Langages : PHP, Java, Python, JavaScript</li>
+          <li data-fr="Tests, déploiement et maintenance d'applications"
+              data-en="Testing, deployment and application maintenance">Tests, déploiement et maintenance d'applications</li>
+          <li data-fr="Intégration et développement web (HTML, CSS, frameworks)"
+              data-en="Web integration and development (HTML, CSS, frameworks)">Intégration et développement web (HTML, CSS, frameworks)</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Matières communes -->
+    <div class="section-header fade-up" style="margin-top:1rem">
+      <span class="section-label">// tronc.commun</span>
+      <h2 class="section-title"
+          data-fr="Matières <span>communes</span>"
+          data-en="Common <span>subjects</span>">
+        Matières <span>communes</span>
+      </h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="skills-grid fade-up">
+      <div class="skill-group">
+        <div class="skill-group-title"
+             data-fr="Culture générale & Expression"
+             data-en="General Culture & Expression">Culture générale & Expression</div>
+        <div class="tags">
+          <span class="tag" data-fr="Français" data-en="French">Français</span>
+          <span class="tag" data-fr="Communication" data-en="Communication">Communication</span>
+          <span class="tag" data-fr="Expression écrite" data-en="Written expression">Expression écrite</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title"
+             data-fr="Mathématiques & Algo"
+             data-en="Mathematics & Algorithms">Mathématiques & Algo</div>
+        <div class="tags">
+          <span class="tag">Algèbre</span>
+          <span class="tag" data-fr="Statistiques" data-en="Statistics">Statistiques</span>
+          <span class="tag" data-fr="Algorithmique" data-en="Algorithms">Algorithmique</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title"
+             data-fr="Langues & Pro"
+             data-en="Languages & Pro">Langues & Pro</div>
+        <div class="tags">
+          <span class="tag" data-fr="Anglais technique" data-en="Technical English">Anglais technique</span>
+          <span class="tag" data-fr="Économie-Droit" data-en="Economics & Law">Économie-Droit</span>
+          <span class="tag" data-fr="PPE (Projet Pro)" data-en="Pro. Project">PPE (Projet Pro)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Débouchés -->
+    <div class="section-header fade-up" style="margin-top:3rem">
+      <span class="section-label">// career.paths</span>
+      <h2 class="section-title"
+          data-fr="Débouchés <span>SISR</span>"
+          data-en="SISR <span>Career Paths</span>">
+        Débouchés <span>SISR</span>
+      </h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="projects-grid stagger fade-up">
+      <div class="project-card">
+        <div class="project-icon">🖥️</div>
+        <div class="project-title"
+             data-fr="Administrateur Systèmes & Réseaux"
+             data-en="Systems & Network Administrator">Administrateur Systèmes & Réseaux</div>
+        <div class="project-desc"
+             data-fr="Gestion et maintenance des serveurs, réseaux et équipements informatiques d'une organisation."
+             data-en="Management and maintenance of an organization's servers, networks and IT equipment.">
+          Gestion et maintenance des serveurs, réseaux et équipements informatiques d'une organisation.
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-icon">🔒</div>
+        <div class="project-title"
+             data-fr="Technicien Cybersécurité"
+             data-en="Cybersecurity Technician">Technicien Cybersécurité</div>
+        <div class="project-desc"
+             data-fr="Sécurisation des infrastructures, analyse des vulnérabilités et mise en place de politiques de sécurité."
+             data-en="Infrastructure hardening, vulnerability analysis and implementation of security policies.">
+          Sécurisation des infrastructures, analyse des vulnérabilités et mise en place de politiques de sécurité.
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-icon">☁️</div>
+        <div class="project-title"
+             data-fr="Technicien Cloud & Virtualisation"
+             data-en="Cloud & Virtualization Technician">Technicien Cloud & Virtualisation</div>
+        <div class="project-desc"
+             data-fr="Déploiement et administration d'environnements virtuels et d'infrastructures cloud (AWS, Azure, VMware)."
+             data-en="Deployment and administration of virtual environments and cloud infrastructures (AWS, Azure, VMware).">
+          Déploiement et administration d'environnements virtuels et d'infrastructures cloud (AWS, Azure, VMware).
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-icon">🎧</div>
+        <div class="project-title"
+             data-fr="Technicien Support N1/N2"
+             data-en="N1/N2 Support Technician">Technicien Support N1/N2</div>
+        <div class="project-desc"
+             data-fr="Assistance technique aux utilisateurs, résolution d'incidents et gestion des tickets (ITIL)."
+             data-en="Technical user assistance, incident resolution and ticket management (ITIL).">
+          Assistance technique aux utilisateurs, résolution d'incidents et gestion des tickets (ITIL).
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <span data-i18n="footer.copy">Fait avec ❤️ par Ayoub RAFIK</span>
+  <span class="mono">//</span>
+  <a href="https://pages.github.com" target="_blank" data-i18n="footer.host">Hébergé sur GitHub Pages</a>
+</footer>
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>

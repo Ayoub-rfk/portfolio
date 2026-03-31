@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="À propos d'Ayoub RAFIK — parcours, expériences et formation.">
+  <title>À propos | Ayoub RAFIK</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="./index.html" class="nav-logo">&lt;AR/&gt;</a>
+  <div class="nav-links">
+    <a href="./index.html"                data-i18n="nav.home">Accueil</a>
+    <a href="./a-propos.html"             data-i18n="nav.about">À propos</a>
+    <a href="./bts-sio.html"              data-i18n="nav.bts">BTS SIO</a>
+    <a href="./epreuve-e5.html"           data-i18n="nav.e5">Épreuve E5</a>
+    <a href="./epreuve-e6.html"           data-i18n="nav.e6">Épreuve E6</a>
+    <a href="./veille-technologique.html" data-i18n="nav.veille">Veille</a>
+    <a href="./competences.html"          data-i18n="nav.skills">Compétences</a>
+    <a href="./contact.html"              data-i18n="nav.contact">Contact</a>
+  </div>
+  <div class="nav-controls">
+    <button class="btn-icon js-lang-btn"  onclick="toggleLang()">EN</button>
+    <button class="btn-icon js-theme-btn" onclick="toggleTheme()">☀️ Light</button>
+  </div>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div id="navDrawer" class="nav-drawer">
+  <a href="./index.html"                data-i18n="nav.home">Accueil</a>
+  <a href="./a-propos.html"             data-i18n="nav.about">À propos</a>
+  <a href="./bts-sio.html"              data-i18n="nav.bts">BTS SIO</a>
+  <a href="./epreuve-e5.html"           data-i18n="nav.e5">Épreuve E5</a>
+  <a href="./epreuve-e6.html"           data-i18n="nav.e6">Épreuve E6</a>
+  <a href="./veille-technologique.html" data-i18n="nav.veille">Veille technologique</a>
+  <a href="./competences.html"          data-i18n="nav.skills">Compétences</a>
+  <a href="./contact.html"              data-i18n="nav.contact">Contact</a>
+  <div class="drawer-controls">
+    <button class="btn-icon js-lang-btn"  onclick="toggleLang()">EN</button>
+    <button class="btn-icon js-theme-btn" onclick="toggleTheme()">☀️ Light</button>
+  </div>
+</div>
+
+<div class="page">
+
+  <header class="page-header">
+    <span class="page-header-label">// about.me</span>
+    <h1 class="page-header-title"
+        data-fr="À propos de moi"
+        data-en="About me">À propos de moi</h1>
+    <p class="page-header-sub"
+       data-fr="Étudiant BTS SIO option SISR à l'EFREI — je bidouille des serveurs et des réseaux depuis le lycée."
+       data-en="BTS SIO SISR student at EFREI — been tinkering with servers and networks since high school.">
+      Étudiant BTS SIO option SISR à l'EFREI — je bidouille des serveurs et des réseaux depuis le lycée.
+    </p>
+  </header>
+
+  <!-- Stats -->
+  <div class="section">
+    <div class="stats-row stagger fade-up">
+      <div class="stat-card">
+        <div class="stat-number">850</div>
+        <div class="stat-label">TOEIC</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">3</div>
+        <div class="stat-label"
+             data-fr="Diplômes / Formations"
+             data-en="Diplomas / Degrees">Diplômes / Formations</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">8+</div>
+        <div class="stat-label"
+             data-fr="Projets techniques"
+             data-en="Technical projects">Projets techniques</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">4</div>
+        <div class="stat-label"
+             data-fr="Expériences pro."
+             data-en="Work experiences">Expériences pro.</div>
+      </div>
+    </div>
+
+    <!-- About grid -->
+    <div class="about-grid fade-up">
+      <div class="about-text">
+        <p data-fr="Je suis en <strong>BTS SIO option SISR</strong> à l'EFREI Villejuif. Avant ça, j'ai fait un <strong>DUT GEII</strong> à Cergy — c'est là que j'ai vraiment accroché avec l'informatique et les systèmes embarqués."
+           data-en="I'm studying <strong>BTS SIO (SISR track)</strong> at EFREI Villejuif. Before that I did a <strong>HND in Electrical Engineering</strong> at Cergy — that's where I really got into IT and embedded systems.">
+          Je suis en <strong>BTS SIO option SISR</strong> à l'EFREI Villejuif. Avant ça, j'ai fait un <strong>DUT GEII</strong> à Cergy — c'est là que j'ai vraiment accroché avec l'informatique et les systèmes embarqués.
+        </p>
+        <p data-fr="Ce qui me plaît vraiment, c'est tout ce qui touche aux infras : monter des serveurs, configurer des réseaux Cisco, faire de la virtualisation avec VMware ou KVM, administrer Linux et Windows Server. J'ai beaucoup pratiqué en dehors des cours, sur mon homelab personnel."
+           data-en="What I really enjoy is everything infrastructure-related: setting up servers, configuring Cisco networks, virtualization with VMware or KVM, managing Linux and Windows Server. I've done a lot of practice outside class on my personal homelab.">
+          Ce qui me plaît vraiment, c'est tout ce qui touche aux infras : monter des serveurs, configurer des réseaux Cisco, faire de la virtualisation avec VMware ou KVM, administrer Linux et Windows Server. J'ai beaucoup pratiqué en dehors des cours, sur mon homelab personnel.
+        </p>
+        <p data-fr="Je cherche une <strong>alternance en réseaux et systèmes</strong> à partir de <strong>septembre 2025</strong>, rythme 2 jours école / 3 jours entreprise, pour une durée de 12 mois."
+           data-en="I'm looking for a <strong>work-study contract in networks and systems</strong> from <strong>September 2025</strong>, 2 days at school / 3 days on-site, for 12 months.">
+          Je cherche une <strong>alternance en réseaux et systèmes</strong> à partir de <strong>septembre 2025</strong>, rythme 2 jours école / 3 jours entreprise, pour une durée de 12 mois.
+        </p>
+
+        <ul class="info-list">
+          <li>
+            <span class="ico">📍</span>
+            <span><strong>Sartrouville</strong>, Île-de-France</span>
+          </li>
+          <li>
+            <span class="ico">✉️</span>
+            <a href="mailto:rafikayoub453@gmail.com">rafikayoub453@gmail.com</a>
+          </li>
+          <li>
+            <span class="ico">📞</span>
+            <a href="tel:+33672118317">06 72 11 83 17</a>
+          </li>
+          <li>
+            <span class="ico">🌐</span>
+            <span data-fr="Français · Arabe (natifs) · Anglais (TOEIC 850/990)"
+                  data-en="French · Arabic (native) · English (TOEIC 850/990)">
+              Français · Arabe (natifs) · Anglais (TOEIC 850/990)
+            </span>
+          </li>
+          <li>
+            <span class="ico">🎯</span>
+            <span data-fr="Alternance SISR — à partir de sept. 2025"
+                  data-en="Work-study SISR — from Sept. 2025">
+              Alternance SISR — à partir de sept. 2025
+            </span>
+          </li>
+        </ul>
+
+        <br>
+        <a href="./assets/docs/CV_RAFIK_Ayoub.pdf" class="btn-primary" download
+           data-fr="⬇ Télécharger mon CV" data-en="⬇ Download my CV">
+          ⬇ Télécharger mon CV
+        </a>
+      </div>
+
+      <div>
+        <img src="./images/image.png" alt="Photo d'Ayoub RAFIK" class="about-photo">
+      </div>
+    </div>
+  </div>
+
+  <!-- Experience -->
+  <div class="section" style="padding-top:0">
+    <div class="section-header fade-up">
+      <span class="section-label">// work.experience</span>
+      <h2 class="section-title"
+          data-fr="Expériences <span>professionnelles</span>"
+          data-en="Work <span>Experience</span>">
+        Expériences <span>professionnelles</span>
+      </h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="timeline fade-up">
+      <div class="timeline-item">
+        <div class="timeline-date">Juillet – Août 2023</div>
+        <div class="timeline-title"
+             data-fr="Équipier de vente"
+             data-en="Sales Associate">Équipier de vente</div>
+        <div class="timeline-org">Carrefour — Montesson</div>
+        <div class="timeline-body"
+             data-fr="Mise en rayon, contact client, gestion des stocks. Boulot d'été pour financer mes formations."
+             data-en="Shelf stocking, customer service, stock management. Summer job to fund my training.">
+          Mise en rayon, contact client, gestion des stocks. Boulot d'été pour financer mes formations.
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">Juillet 2022</div>
+        <div class="timeline-title"
+             data-fr="Auxiliaire de vacances — CDD"
+             data-en="Temporary HR Assistant — Fixed-term">Auxiliaire de vacances — CDD</div>
+        <div class="timeline-org">BNP Paribas — Paris 9ème</div>
+        <div class="timeline-body"
+             data-fr="Mission RH pendant l'été : je vérifiait les dossiers de candidats et faisais une première sélection pour des postes en stage/alternance. Expérience sympa dans un grand groupe."
+             data-en="Summer HR mission: reviewing candidate files and doing first-round screening for internship/work-study positions. Good experience in a large company.">
+          Mission RH pendant l'été : je vérifiait les dossiers de candidats et faisais une première sélection pour des postes en stage/alternance. Expérience sympa dans un grand groupe.
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">Avril – Juin 2021</div>
+        <div class="timeline-title"
+             data-fr="Stage — DUT Électronique"
+             data-en="Internship — Electronics HND">Stage — DUT Électronique</div>
+        <div class="timeline-org">Beta Bâtiment — Paris</div>
+        <div class="timeline-body"
+             data-fr="Mon premier vrai projet technique : un système de géolocalisation GPS pour vélo avec Arduino. J'ai fait la maquette électronique et codé la carte en C++. C'est ce stage qui m'a confirmé que je voulais bosser dans le technique."
+             data-en="My first real technical project: a GPS tracking system for bicycles using Arduino. I built the electronic mockup and coded the board in C++. This internship confirmed I wanted to work in tech.">
+          Mon premier vrai projet technique : un système de géolocalisation GPS pour vélo avec Arduino. J'ai fait la maquette électronique et codé la carte en C++. C'est ce stage qui m'a confirmé que je voulais bosser dans le technique.
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">Janvier – Juin 2021</div>
+        <div class="timeline-title"
+             data-fr="Employé polyvalent"
+             data-en="Polyvalent Employee">Employé polyvalent</div>
+        <div class="timeline-org">Domino's Pizza — Paris</div>
+        <div class="timeline-body"
+             data-fr="Accueil des clients, préparation et livraison de pizzas."
+             data-en="Customer service, pizza preparation and delivery.">
+          Accueil des clients, préparation et livraison de pizzas.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Education -->
+  <div class="section" style="padding-top:0">
+    <div class="section-header fade-up">
+      <span class="section-label">// education</span>
+      <h2 class="section-title"
+          data-fr="<span>Formation</span>"
+          data-en="<span>Education</span>">
+        <span>Formation</span>
+      </h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="timeline fade-up">
+      <div class="timeline-item">
+        <div class="timeline-date">2024 – 2026</div>
+        <div class="timeline-title"
+             data-fr="BTS SIO — Option SISR"
+             data-en="BTS SIO — SISR Track">BTS SIO — Option SISR</div>
+        <div class="timeline-org">EFREI — Villejuif</div>
+        <div class="timeline-body"
+             data-fr="Services Informatiques aux Organisations, spécialité Solutions d'Infrastructure, Systèmes et Réseaux. Formation en alternance."
+             data-en="IT Services for Organizations, specializing in Infrastructure, Systems and Networks. Work-study program.">
+          Services Informatiques aux Organisations, spécialité Solutions d'Infrastructure, Systèmes et Réseaux. Formation en alternance.
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2019 – 2021</div>
+        <div class="timeline-title"
+             data-fr="DUT Génie Électrique et Informatique Industrielle"
+             data-en="HND in Electrical Engineering & Industrial IT">DUT Génie Électrique et Informatique Industrielle</div>
+        <div class="timeline-org">IUT Cergy-Pontoise</div>
+        <div class="timeline-body"
+             data-fr="Formation pluridisciplinaire couvrant l'électronique, l'informatique industrielle, les systèmes embarqués et l'automatisme."
+             data-en="Multidisciplinary training covering electronics, industrial computing, embedded systems and automation.">
+          Formation pluridisciplinaire couvrant l'électronique, l'informatique industrielle, les systèmes embarqués et l'automatisme.
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2019</div>
+        <div class="timeline-title"
+             data-fr="Baccalauréat Scientifique — Option Sciences Physiques"
+             data-en="Scientific Baccalaureate — Physics Option">Baccalauréat Scientifique — Option Sciences Physiques</div>
+        <div class="timeline-org">ELARAKI School</div>
+        <div class="timeline-body"
+             data-fr="Baccalauréat scientifique obtenu avec mention."
+             data-en="French scientific baccalaureate obtained with distinction.">
+          Baccalauréat scientifique obtenu avec mention.
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <span data-i18n="footer.copy">Fait avec ❤️ par Ayoub RAFIK</span>
+  <span class="mono">//</span>
+  <a href="https://pages.github.com" target="_blank" data-i18n="footer.host">Hébergé sur GitHub Pages</a>
+</footer>
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
